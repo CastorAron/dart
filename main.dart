@@ -1,15 +1,13 @@
 void main() {
-  double tempFarenheight = 90;
+  int x = 5;
+  int y = x++;
+  print('x: $x, y: $y');
+  int w = ++x;
+  int z = --y;
+  print('w: $w, z: $z');
 
-  double tempCelcius;
-  tempCelcius = ((tempFarenheight - 32) / 1.8);
-
-  // int C;
-  //C = tempCelcius.toInt();
-
-  print('${tempFarenheight.toStringAsFixed(0)}' +
-      'F ' +
-      '=' +
-      ' ${tempCelcius.toStringAsFixed(2)}' +
-      'C');
+  int a = 1;
+  int b = a++;
+  int c = --b;
+  print('a: $a, b: $b c: $c');
 }
