@@ -1,8 +1,12 @@
+import 'dart:math';
+
 ///the entry point of my project.
 void main() {
-  final int x = 5;
-  var y = 10;
-  var string = "Hello";
-  print('x: $x' + ' y: $y $string');
-  x = 6;
+  // declare variables
+  const String text = 'I like pizza';
+  const String topping = 'with tomato';
+  var favorite = '$text $topping';
+  String newText = favorite.replaceAll('pizza', 'pasta');
+  favorite = 'Now I like curry';
+  print(newText + '\n I Changed ' + favorite);
 }
