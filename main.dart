@@ -1,11 +1,18 @@
 void main() {
-  String firstName = "byabato";
-  String lastName = "Chinokoli";
-  int age = 36;
-  double height = 1.84;
+  double temperature = 20;
+  int value = 8;
+  String pizza = "pizza";
+  String pasta = "pasta";
 
-  print(
-      "My first name is " + firstName + "" + "\n" + "last name is" + lastName);
-
-  print("Her age is $age");
+  print("$value plus $value makes ${value + value}" +
+      "\n" "I like " +
+      pizza +
+      " and " +
+      pasta);
+  print("Today I\'m feeling great !");
+  print("Today I'm feeling great !");
+  //raw string
+  print(r"My divider is \");
+  print(r"Today I'm feeling great !");
+  print(r"C:\windows\system32\drivers\etc");
 }
