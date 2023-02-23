@@ -1,13 +1,21 @@
+///the entry point of my project.
 void main() {
-  int x = 5;
-  int y = x++;
-  print('x: $x, y: $y');
-  int w = ++x;
-  int z = --y;
-  print('w: $w, z: $z');
+  int green = 0xFF00FF00;
+  int x = 0xF0;
+  int y = 0x0F;
 
-  int a = 1;
-  int b = a++;
-  int c = --b;
-  print('a: $a, b: $b c: $c');
+  print(x | y);
+  print((x | y).toRadixString(16));
+  print((x | y).toRadixString(2));
+
+  print(x & y);
+  print(x ^ y);
+  print(~y);
+  // ignore: todo
+  // TODO: #1 add me
+
+  //shift operaytor
+  int z = 4;
+  print((z >> 1).toRadixString(2));
+  print(z << 1);
 }
