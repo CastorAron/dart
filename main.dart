@@ -1,11 +1,11 @@
 void main() {
-  String name = "Casto";
-  int age = 23;
-  double height = 12.6;
-  bool likeCode = true;
+  String firstName = "byabato";
+  String lastName = "Chinokoli";
+  int age = 36;
+  double height = 1.84;
 
-  print(name);
-  print(age);
-  print(height);
-  print(likeCode);
+  print(
+      "My first name is " + firstName + "" + "\n" + "last name is" + lastName);
+
+  print("Her age is $age");
 }
