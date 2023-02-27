@@ -1,6 +1,6 @@
 enum Laist { a, b, c }
 
+///Project startup
 void main() {
-  Laist man = Laist.a;
-  print(man);
+  print(Laist.values);
 }
