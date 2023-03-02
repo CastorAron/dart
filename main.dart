@@ -1,30 +1,22 @@
 void main() {
-  final colors = [
-    'grey',
-    'brown',
-  ];
-  var extracolor = [
-    'purple',
-    'orange',
-  ];
-  const addBlue = false;
-  const addRed = true;
+  const bananas = 5;
+  const apples = 6;
+  const grains = {
+    'pasta': '500',
+    'price': '1Kg',
+  };
+  const addGrains = true;
+  var shoppingList = {
+    if (bananas > 0) bananas,
+    if (apples > 0) apples,
+    for (var keys in grains.values) keys,
+  };
+  var shoppingList2 = {
+    if (bananas > 0) 'banana': bananas,
+    if (apples > 0) 'apples': apples,
+    if (addGrains) ...grains
+  };
 
-  // ignore: dead_code
-  if (addBlue) {
-    colors.add('blue');
-  }
-
-  if (addRed) {
-    colors.add('red');
-  }
-  final colors2 = [
-    'brown',
-    'yellow',
-    if (addBlue) 'blue',
-    if (addRed) 'red',
-    // ...extracolor
-    for (var i in extracolor) i,
-  ];
-  print(colors2);
+  print(shoppingList);
+  print(shoppingList2);
 }
