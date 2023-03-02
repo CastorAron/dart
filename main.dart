@@ -1,12 +1,30 @@
 void main() {
-  var restaurant = [
-    {
-      'name': 'Pizza mario',
-      'cuisine': 'Italian',
-      'ratings': [5, 3.5, 14],
-    }
+  final colors = [
+    'grey',
+    'brown',
   ];
-  for (var i in restaurant) {
-    print(i);
+  var extracolor = [
+    'purple',
+    'orange',
+  ];
+  const addBlue = false;
+  const addRed = true;
+
+  // ignore: dead_code
+  if (addBlue) {
+    colors.add('blue');
   }
+
+  if (addRed) {
+    colors.add('red');
+  }
+  final colors2 = [
+    'brown',
+    'yellow',
+    if (addBlue) 'blue',
+    if (addRed) 'red',
+    // ...extracolor
+    for (var i in extracolor) i,
+  ];
+  print(colors2);
 }
