@@ -1,22 +1,29 @@
 void main() {
-  const a = {1, 3};
-  const b = {3, 5};
+  var person = {
+    'name': 'Kali men',
+    'age': 36,
+    'height': 100,
+  };
 
-  print((a.difference(b)).union(b.difference(a)));
-  var sum = (a.difference(b)).union(b.difference(a));
-  var total = 0;
+  Map<String, dynamic> mtu = {
+    'jina': 'Castor',
+    'urefu': 1.8,
+    'umri': 23,
+  };
 
-  var t = 0;
-  for (var i in sum) {
-    
-      t+=i;
+  var dog = <String, dynamic>{
+    "name": "Mkali",
+    "age": 6,
+    "weight": 100,
+  };
+  var name = person['name'];
+  var age = person['age'];
+  print(name);
+  print(age);
+  var jina = mtu['jina'] as String;
+  print(jina);
+
+  //add new key
+  person['likechapati'] = true;
+  print(person);
 }
-  
-  print(t);
-// var sum = 0;
-
-//   for (var set in setOfSets) {
-//     for (var value in set) {
-//       sum += value;
-//     }
-//   }
