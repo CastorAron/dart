@@ -26,4 +26,9 @@ void main() {
   //add new key
   person['likechapati'] = true;
   print(person);
+  var weight = person['weight'];
+  print(weight);
+  if (weight == null) {
+    print("Object Weight not available.");
+  }
 }
