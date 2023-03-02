@@ -31,4 +31,21 @@ void main() {
   if (weight == null) {
     print("Object Weight not available.");
   }
+//print new line
+print("\n'")
+
+  //iteration in MAP using keys burf dictionary map is not iteratable
+  for (var key in person.keys) {
+    print(key);
+    print(person[key]);
+  }
+  print("\n");
+  for (var value in person.values) {
+    print(value);
+  }
+  print("\n");
+
+  for (var entry in person.entries) {
+    print('${entry.key} -> ${entry.value}');
+  }
 }
