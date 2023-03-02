@@ -1,51 +1,37 @@
 void main() {
-  var person = {
-    'name': 'Kali men',
-    'age': 36,
-    'height': 100,
+  const pizzaPrice = {
+    'margherita': 5.5,
+    'pepperon': 7.5,
+    'vegeterian': 6.5,
   };
 
-  Map<String, dynamic> mtu = {
-    'jina': 'Castor',
-    'urefu': 1.8,
-    'umri': 23,
-  };
+  const order = [
+    'margherita',
+    'pepperon',
+    'pine',
+  ];
+  var total = 0.0;
 
-  var dog = <String, dynamic>{
-    "name": "Mkali",
-    "age": 6,
-    "weight": 100,
-  };
-  var name = person['name'];
-  var age = person['age'];
-  print(name);
-  print(age);
-  var jina = mtu['jina'] as String;
-  print(jina);
+  for (var item in order) {
+    final price = pizzaPrice[item];
+    if (price != null) {
+      total += price;
+    } else {
+      print("$item pizza is not in the menu.");
+    }
+  }
 
-  //add new key
-  person['likechapati'] = true;
-  print(person);
-  var weight = person['weight'];
-  print(weight);
-  if (weight == null) {
-    print("Object Weight not available.");
-  }
-//print new line
-print("\n'")
+  print("Total price is ${total}\$");
 
-  //iteration in MAP using keys burf dictionary map is not iteratable
-  for (var key in person.keys) {
-    print(key);
-    print(person[key]);
-  }
-  print("\n");
-  for (var value in person.values) {
-    print(value);
-  }
-  print("\n");
+  // const number = {
+  //   'number1': 12,
+  //   'number2': 14,
+  // };
+  // final numbers = ['number1', 'number2'];
+  // var innt = 0;
+  // for (var nth in numbers) {
+  //   final numm = number[nth];
+  //   innt += numm;
 
-  for (var entry in person.entries) {
-    print('${entry.key} -> ${entry.value}');
-  }
+  //     }
 }
