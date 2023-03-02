@@ -1,8 +1,10 @@
 void main() {
-  List cities = ['Arusha', 'dar', 10];
-  // list annotation
-  List<String> cit = ['arrow', 'bate'];
-  var towns = <String>['Moshi', 'Tanga'];
+  final cities = ['Arusha', 'Dar', 'Mbeya'];
+  // cities = ['Tokyo'];
+  cities[1] = 'Tokyo';
 
-  print("$cities $cit $towns");
+  const name = ['Alsice', 'Juma'];
+  // name = ['Tokyo'];
+  print(cities);
+  print(name);
 }
